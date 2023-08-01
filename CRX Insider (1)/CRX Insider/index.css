@@ -1,0 +1,472 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  background-color: #f8f8f8;
+}
+
+nav {
+  background-color: white;
+  height: 80px;
+}
+
+#accordionExample {
+  width: 20%;
+  margin-right: 15px;
+}
+
+.main {
+  width: 100%;
+}
+
+.header {
+  height: 420px;
+
+  background: linear-gradient(
+      0deg,
+      rgba(250, 245, 238, 0.75) 0%,
+      rgba(250, 245, 238, 0.75) 100%
+    ),
+    url(<path-to-image>), lightgray 50% / cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header p {
+  margin-top: 24px;
+  color: #333;
+  text-align: center;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.header h1 {
+  margin-top: 50px;
+  color: #333;
+  text-align: center;
+
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.2px;
+}
+
+section {
+  display: flex;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  margin-top: 9px;
+  justify-content: space-between;
+}
+
+.search input {
+  outline: 0;
+  width: 770px;
+  height: 50px;
+  border: 1px solid #999;
+  background: white;
+  color: #555;
+  padding-left: 22px;
+  border-radius: 8px;
+  margin-right: 20px;
+  font-size: 18px;
+}
+
+.search button {
+  outline: 0;
+  background: #b80f0a;
+  border: none;
+  border-radius: 16%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  margin-left: -68px;
+}
+
+.search button img {
+  width: 19px;
+}
+
+.insights {
+  width: 75%;
+  height: 140px;
+  text-align: center;
+  padding: 0px 95px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.insights h1 {
+  color: #b80f0a;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+.insights p {
+  color: #333333;
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+}
+
+.main_heading {
+  margin-top: 50px;
+}
+
+.main_heading h2 {
+  color: #333;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.main_heading p {
+  color: #333;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 50px;
+}
+
+h3 {
+  color: #777;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  /* line-height: normal; */
+  letter-spacing: 0.32px;
+}
+
+.all {
+  color: #ff3a54;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 0.32px;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #ff3a54;
+}
+
+.categories {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 2px 18px 2px rgba(0, 0, 0, 0.07);
+}
+
+#cards {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.item {
+  margin: 21px;
+  background: #f2f2f2;
+  width: 260px;
+  height: 284px;
+}
+.seeAll{
+  text-align: center;
+}
+
+.rating_download {
+  display: flex;
+  align-items: center;
+}
+
+.rating_download div {
+    width: fit-content;
+  display: flex;
+  position: relative;
+  bottom: 125px;
+  left: 10px;
+  justify-content: space-between;
+}
+.logo {
+  position: absolute;
+}
+
+.logo img {
+  position: relative;
+  bottom: 50px;
+  left: 10px;
+}
+
+.starValue {
+  margin-right: 6px;
+  padding: 4px 9px;
+  width: 60px;
+  height: 26px;
+  border-radius: 2px;
+  background: #b80f0a;
+  box-shadow: 0px 2px 14px 0px rgba(0, 0, 0, 0.12);
+}
+
+.starValue p {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.downloadValue {
+  width: 78px;
+  height: 26px;
+  border-radius: 2px;
+  background: #fff;
+  box-shadow: 0px 2px 14px 0px rgba(0, 0, 0, 0.12);
+}
+
+.downloadValue span {
+    font-family: 'Poppins', sans-serif;
+  color: #333;
+  padding-right: 2px;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.content h4 {
+  padding: 6px;
+  color: #333;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.content p {
+  padding: 6px;
+  width: 244px;
+  color: #333;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+}
+#cards > p {
+  margin: auto;
+  color: #999;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+.section2 h5 {
+  padding-top: 40px;
+  color: #333;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.section2 > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+.section2 > div div {
+  margin-top: 38px;
+  background: #fff;
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.16);
+  padding: 30px 62px 29px 62px;
+  height: 180px;
+  width: 340px;
+}
+.section2 p {
+  margin-top: 14px;
+  margin-bottom: 14px;
+  color: #333;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.section2 span {
+  color: #333;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.section2 button {
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border-radius: 4px;
+  background: #b80f0a;
+  padding: 16px 15px 15px 15px;
+  border: none;
+  margin: auto;
+  display: flex;
+  margin-top: 24px;
+}
+.added {
+  margin-top: 60px;
+}
+.added h5 {
+  color: #333;
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+.added h5 span {
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+font-size: 32px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-decoration-line: underline;
+}
+.commonHeading{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.commonHeading h6{
+    color: #333;
+font-size: 28px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.commonHeading h6 span{
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+font-size: 28px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.commonHeading p{
+    color: #999;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-decoration-line: underline;
+}
+.newHeight{
+    width: 262px;
+    height:fit-content;
+    border-radius: 6px;
+border: 1px solid #E0E0E0;
+background: #FFF;
+}
+.newHeight>img{
+    border-radius: 6px;
+}
+.btns{
+    display: flex;
+    justify-content: center;
+    height: 38px;
+}
+.btns button{
+    width: 100%;
+
+}
+.btn_details{
+    color: #333;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+border-radius: 0px 0px 0px 4px;
+border: 1px solid #E0E0E0;
+background: #FFF;
+
+}
+.btn_download{
+    color: #FFF;
+font-size: 14px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+border-radius: 0px 0px 4px 0px;
+background: #B80F0A;
+border: none;
+}
+.new_card{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footerCard{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 36px;
+}
+.footerCard div{
+    padding-bottom: 30px;
+    width: 336.333px;
+
+    text-align: center;
+    border-radius: 5px;
+background: #FFF;
+box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.10);
+}
+.footerCard p{
+    padding: 0px 25px;
+    color: #7B7B78;
+text-align: center;
+font-size: 15px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.footerCard span{
+    font-weight: 900;
+    color: #009DFE;
+    margin-top: 23px;
+
+}
+.footerCard img{
+    margin: 27px 0px;
+}
+.footer h6{
+    color: #333;
+font-size: 28px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}.footer{
+    padding-bottom: 257px;
+}
